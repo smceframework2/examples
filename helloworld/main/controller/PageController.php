@@ -6,7 +6,7 @@ class PageController
 {
 	
 	
-	// http://localhost/helloworld/page/index
+	// http://localhost/helloworld/index.php?route=/page/index
 	
 	public function actionIndex()
 	{

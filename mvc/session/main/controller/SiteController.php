@@ -6,7 +6,7 @@ class SiteController
 	
 	
 
-	
+	// http://localhost/session/site/index1
 
 	public function actionIndex1()
 	{
@@ -18,7 +18,7 @@ class SiteController
 		
 	}
 
-
+	// http://localhost/session/site/index2
 	public function actionIndex2()
 	{
 

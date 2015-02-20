@@ -22,24 +22,13 @@ $loader->register();
 
 
 
-function baseUrl()
-{
-        
-    $uri=str_replace("/index.php", "", $_SERVER["SCRIPT_NAME"]);
-    
-    return str_replace($uri, "", $_SERVER['REQUEST_URI']);
-}
 
-$baseUrl=baseUrl();
-
-
-
-$di->bind("router",function()use($baseUrl){
+$di->bind("router",function(){
 
     $router = new Smce\Mvc\Router;
     $router->setDefaultController('site');
     $router->setDefaultAction('index');
-    $router->handle($baseUrl);
+    $router->handle();
 
     return $router;
 });

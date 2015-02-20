@@ -3,6 +3,7 @@
 class SiteController
 {
 
+	// http://localhost/model/site/index
 	public function actionIndex()
 	{
 

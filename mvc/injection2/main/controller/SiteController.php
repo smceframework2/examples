@@ -16,6 +16,8 @@ class SiteController
 
 	}
 
+	// http://localhost/injection2/site/index
+
 	public function actionIndex(CompanyBrand $brand, PersonInterface $person)
 	{
 

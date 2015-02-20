@@ -18,10 +18,13 @@ class SiteController
 	                'redirect'=>"site/login",
 	                'expression'=>true,    //True is allowed only. Only TRUE or FALSE values ​​are.
 	                //'ip'=>array('127.0.0.1'), //IP is allowed only. is array
-            ))->run();
+            ));
+            $acl->run();
 		});
 
 	}
+
+	// http://localhost/acl/site/index
 
 	public function actionIndex()
 	{
@@ -30,6 +33,7 @@ class SiteController
 
 	}
 
+	// http://localhost/acl/site/page
 	public function actionPage()
 	{
 
@@ -37,6 +41,7 @@ class SiteController
 
 	}
 
+	// http://localhost/acl/site/login
 
 	public function actionLogin()
 	{
