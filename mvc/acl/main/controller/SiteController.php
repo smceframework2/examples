@@ -20,6 +20,7 @@ class SiteController
 	                //'ip'=>array('127.0.0.1'), //IP is allowed only. is array
             ));
             $acl->run();
+            return  $acl;
 		});
 
 	}
