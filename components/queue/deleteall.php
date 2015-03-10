@@ -19,4 +19,4 @@ $di->bind("memcache",function(){
 
 $queue=new Queue(DI::resolve("memcache"));
 
-$queue->remove("queue1","process1");
+$queue->removeQue("queue1");
