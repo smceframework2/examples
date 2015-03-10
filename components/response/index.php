@@ -2,9 +2,9 @@
 
 
 
-$di=new Smce\Core\EventManager;
+$event=new Smce\Core\EventManager;
 
-$di->push("response",function($code,$msg){
+$event->push("response",function($code,$msg){
 
 	throw new Smce\Http\Response($code,$msg);
 
